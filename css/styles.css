@@ -1,0 +1,26 @@
+.gallery_list {
+  display: flex;
+  flex-direction: column;
+  background: rgb(228, 216, 151);
+  padding: 40px;
+  list-style: none;
+}
+.item:not(:last-child) {
+  margin-bottom: 300px;
+}
+.item:nth-child(even) {
+  margin-left: auto;
+}
+
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
