@@ -6,7 +6,7 @@ inputRef.setAttribute('max', '100');
 inputRef.setAttribute('value', '20');
 
 function changeFontSize(event) {
-    let size = event.target.value;
+    const size = event.target.value;
     spanRef.style.fontSize = size + 'px';
 }
 inputRef.addEventListener('input', changeFontSize);
