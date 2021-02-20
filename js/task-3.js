@@ -20,10 +20,10 @@ const images = [
 
 const makeGallery = listItems => {
     return listItems.reduce((acc, item) => {
-        acc += `<li class="item">
+        acc += `<li class="gallery__item">
         <img src="${item.url}"
         alt = "${item.alt}"
-        class= "img"/></li>`;
+        class= "gallery__img"/></li>`;
         return acc;
     }, '');
 

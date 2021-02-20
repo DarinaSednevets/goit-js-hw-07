@@ -1,17 +1,19 @@
 .gallery_list {
   display: flex;
-  flex-direction: column;
-  background: rgb(228, 216, 151);
-  padding: 40px;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
   list-style: none;
 }
-.item:not(:last-child) {
-  margin-bottom: 300px;
-}
-.item:nth-child(even) {
-  margin-left: auto;
+.gallery__img {
+  display: block;
+  width: 300px;
+  height: auto;
 }
 
+.gallery__item:not(:first-child) {
+  margin-left: 30px;
+}
 
 #validation-input {
   border: 3px solid #bdbdbd;
