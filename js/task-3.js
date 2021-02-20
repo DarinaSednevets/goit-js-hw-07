@@ -16,8 +16,6 @@ const images = [
     },
 ];
 
-
-
 const makeGallery = listItems => {
     return listItems.reduce((acc, item) => {
         acc += `<li class="gallery__item">
@@ -29,8 +27,8 @@ const makeGallery = listItems => {
 
 };
 
-const ulRefs = document.querySelector('#gallery');
-ulRefs.classList.add('gallery__list');
-ulRefs.insertAdjacentHTML('afterbegin', makeGallery(images));
+const galleryListRef = document.querySelector('#gallery');
+galleryListRef.classList.add('gallery__list');
+galleryListRef.insertAdjacentHTML('afterbegin', makeGallery(images));
 
 
