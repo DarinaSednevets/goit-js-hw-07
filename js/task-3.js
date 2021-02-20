@@ -31,4 +31,3 @@ const galleryListRef = document.querySelector('#gallery');
 galleryListRef.classList.add('gallery__list');
 galleryListRef.insertAdjacentHTML('afterbegin', makeGallery(images));
 
-
