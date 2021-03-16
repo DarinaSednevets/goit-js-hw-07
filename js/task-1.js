@@ -1,23 +1,13 @@
-// const firstListRef = document.querySelector('#categories');
-// const firstListItems = Array.from(firstListRef.children);
+const categoriesRef = document.querySelector('#categories');
+const liItemsRef = Array.from(categoriesRef.children);
 
-// console.log(`В списке ${firstlistItems.length} категории.`);
-
-// firstListItems.forEach(element => {
-//     console.log(`Категория: ${element.querySelector('h2').textContent}`)
-//     console.log(`Количество элементов: ${element.querySelector('ul').children.length}`,
-//     );
-// });
+console.log(`В списке ${liItemsRef.length} категории.`);
 
 
-const mainListRef = document.querySelector('#categories');
-const mainListItems = Array.from(mainListRef.children);
+liItemsRef.forEach(element => {
+    console.log(`Категория: ${element.querySelector('h2').textContent}`)
+    console.log(`Количество элементов: ${element.querySelector('ul').children.length}`)
 
-console.log(`В списке ${mainListItems.length} категории.`);
+})
 
-mainListItems.forEach(el => {
-    console.log(`Категория: ${el.querySelector('h2').textContent}`);
-    console.log(
-        `Количество элементов: ${el.querySelector('ul').children.length}`,
-    );
-});
+

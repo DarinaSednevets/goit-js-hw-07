@@ -1,3 +1,4 @@
+
 const images = [
     {
         url:
@@ -16,18 +17,24 @@ const images = [
     },
 ];
 
-const makeGallery = listItems => {
-    return listItems.reduce((acc, item) => {
+
+const makeGallery = images => {
+    return images.reduce((acc, item) => {
         acc += `<li class="gallery__item">
-        <img src="${item.url}"
-        alt = "${item.alt}"
-        class= "gallery__img"/></li>`;
+            <img
+                src="${item.url}"
+                alt="${item.alt}"
+                class="gallery__img"/>
+        </li>`;
+
         return acc;
     }, '');
-
-};
-
+}
 const galleryListRef = document.querySelector('#gallery');
 galleryListRef.classList.add('gallery__list');
 galleryListRef.insertAdjacentHTML('afterbegin', makeGallery(images));
+
+
+
+
 
